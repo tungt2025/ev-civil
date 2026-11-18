@@ -1,0 +1,2870 @@
+{
+  "train": [
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_8",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_8/ros_crack_8_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_8/ros_crack_8_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 1104,
+      "crack_count": 1104,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_35",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_35/31_crack_35_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_35/31_crack_35_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 41,
+      "crack_count": 41,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_15",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_15/dec_25_15_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_15/dec_25_15_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 4,
+      "crack_count": 4,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_49",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_49/31_crack_49_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_49/31_crack_49_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 51,
+      "crack_count": 51,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_22",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_22/ros_crack_22_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_22/ros_crack_22_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 621,
+      "crack_count": 621,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_4",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_4/27_crack_4_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_4/27_crack_4_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 1,
+      "crack_count": 1,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_8",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_8/dec_25_8_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_8/dec_25_8_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 29,
+      "crack_count": 29,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_12",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_12/27_crack_12_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_12/27_crack_12_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 14,
+      "crack_count": 14,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_9",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_9/ros_crack_9_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_9/ros_crack_9_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 196,
+      "crack_count": 196,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_37",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_37/31_crack_37_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_37/31_crack_37_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 99,
+      "crack_count": 99,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_7",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_7/31_crack_7_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_7/31_crack_7_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 56,
+      "crack_count": 56,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_15",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_15/31_crack_15_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_15/31_crack_15_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 11,
+      "crack_count": 11,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_15",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_15/ros_crack_15_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_15/ros_crack_15_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 231,
+      "crack_count": 231,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_15",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_15/27_crack_15_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_15/27_crack_15_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 2,
+      "crack_count": 2,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_23",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_23/dec_25_23_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_23/dec_25_23_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 192,
+      "crack_count": 192,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_7",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_7/27_crack_7_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_7/27_crack_7_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 137,
+      "crack_count": 137,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_12",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_12/dec_25_12_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_12/dec_25_12_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 4,
+      "crack_count": 4,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_32",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_32/31_crack_32_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_32/31_crack_32_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 178,
+      "crack_count": 178,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_16",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_16/31_crack_16_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_16/31_crack_16_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 73,
+      "crack_count": 73,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_27",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_27/31_crack_27_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_27/31_crack_27_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 17,
+      "crack_count": 17,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_26",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_26/ros_crack_26_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_26/ros_crack_26_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 166,
+      "crack_count": 166,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_13",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_13/27_crack_13_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_13/27_crack_13_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 2,
+      "crack_count": 2,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_5",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_5/27_crack_5_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_5/27_crack_5_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 8,
+      "crack_count": 8,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_36",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_36/ros_crack_36_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_36/ros_crack_36_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 380,
+      "crack_count": 380,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_18",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_18/31_crack_18_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_18/31_crack_18_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 41,
+      "crack_count": 41,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_21",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_21/31_crack_21_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_21/31_crack_21_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 208,
+      "crack_count": 208,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_40",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_40/31_crack_40_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_40/31_crack_40_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 60,
+      "crack_count": 60,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_jan_2/2_jan_crack_43",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_jan_2/2_jan_crack_43/2_jan_crack_43_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_jan_2/2_jan_crack_43/2_jan_crack_43_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 66,
+      "crack_count": 66,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_24",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_24/31_crack_24_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_24/31_crack_24_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 30,
+      "crack_count": 30,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_6",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_6/27_crack_6_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_6/27_crack_6_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 53,
+      "crack_count": 53,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_50",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_50/31_crack_50_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_50/31_crack_50_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 115,
+      "crack_count": 115,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_27",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_27/ros_crack_27_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_27/ros_crack_27_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 238,
+      "crack_count": 238,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_48",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_48/31_crack_48_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_48/31_crack_48_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 24,
+      "crack_count": 24,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_2",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_2/27_crack_2_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_2/27_crack_2_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 5,
+      "crack_count": 5,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_41",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_41/31_crack_41_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_41/31_crack_41_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 3,
+      "crack_count": 3,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_29",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_29/ros_crack_29_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_29/ros_crack_29_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 45,
+      "crack_count": 45,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_1",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_1/ros_crack_1_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_1/ros_crack_1_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 92,
+      "crack_count": 92,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_52",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_52/31_crack_52_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_52/31_crack_52_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 49,
+      "crack_count": 49,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_42",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_42/31_crack_42_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_42/31_crack_42_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 73,
+      "crack_count": 73,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_6",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_6/31_crack_6_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_6/31_crack_6_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 76,
+      "crack_count": 76,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_34",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_34/31_crack_34_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_34/31_crack_34_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 60,
+      "crack_count": 60,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_8",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_8/27_crack_8_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_8/27_crack_8_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 56,
+      "crack_count": 56,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_46",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_46/31_crack_46_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_46/31_crack_46_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 64,
+      "crack_count": 64,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_17",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_17/31_crack_17_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_17/31_crack_17_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 73,
+      "crack_count": 73,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_37",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_37/ros_crack_37_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_37/ros_crack_37_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 299,
+      "crack_count": 299,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_jan_2/2_jan_crack_32",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_jan_2/2_jan_crack_32/2_jan_crack_32_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_jan_2/2_jan_crack_32/2_jan_crack_32_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 13,
+      "crack_count": 13,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_4",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_4/31_crack_4_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_4/31_crack_4_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 157,
+      "crack_count": 157,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_13",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_13/31_crack_13_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_13/31_crack_13_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 24,
+      "crack_count": 24,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_6",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_6/13_march_outdoor_6_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_6/13_march_outdoor_6_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 198,
+      "crack_count": 0,
+      "spalling_count": 198
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_0",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_0/13_march_outdoor_0_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_0/13_march_outdoor_0_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 137,
+      "crack_count": 0,
+      "spalling_count": 137
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_27",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_27/13_march_outdoor_27_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_27/13_march_outdoor_27_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 73,
+      "crack_count": 0,
+      "spalling_count": 73
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_4",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_4/13_march_outdoor_4_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_4/13_march_outdoor_4_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 423,
+      "crack_count": 0,
+      "spalling_count": 423
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_8",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_8/13_march_outdoor_8_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_8/13_march_outdoor_8_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 185,
+      "crack_count": 0,
+      "spalling_count": 185
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_7",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_7/13_march_outdoor_7_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_7/13_march_outdoor_7_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 183,
+      "crack_count": 0,
+      "spalling_count": 183
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_5",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_5/13_march_outdoor_5_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_5/13_march_outdoor_5_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 175,
+      "crack_count": 0,
+      "spalling_count": 175
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_2",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_2/13_march_outdoor_2_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_2/13_march_outdoor_2_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 149,
+      "crack_count": 0,
+      "spalling_count": 149
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_29",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_29/13_march_outdoor_29_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_29/13_march_outdoor_29_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 71,
+      "crack_count": 0,
+      "spalling_count": 71
+    },
+    {
+      "seq_id": "day_time_challenge/crack_89",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/crack_89/crack_89_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/crack_89/crack_89_label.npy",
+      "condition": "day_time_challenge",
+      "num_labels": 20,
+      "crack_count": 20,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "day_time_challenge/crack_115",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/crack_115/crack_115_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/crack_115/crack_115_frame_label.npy",
+      "condition": "day_time_challenge",
+      "num_labels": 246,
+      "crack_count": 246,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "day_time_challenge/spalling_57",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/spalling_57/spalling_57_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/spalling_57/spalling_57_label.npy",
+      "condition": "day_time_challenge",
+      "num_labels": 20,
+      "crack_count": 0,
+      "spalling_count": 20
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_148",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_148/crack_148_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_148/crack_148_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 86,
+      "crack_count": 86,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_19",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_19/crack_19_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_19/crack_19_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 184,
+      "crack_count": 184,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_178",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_178/crack_178_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_178/crack_178_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 59,
+      "crack_count": 59,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_160",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_160/crack_160_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_160/crack_160_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 60,
+      "crack_count": 60,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_14",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_14/crack_14_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_14/crack_14_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 114,
+      "crack_count": 114,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_63",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_63/crack_63_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_63/crack_63_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 763,
+      "crack_count": 624,
+      "spalling_count": 139
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_15",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_15/crack_15_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_15/crack_15_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 288,
+      "crack_count": 288,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_20",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_20/crack_20_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_20/crack_20_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 316,
+      "crack_count": 316,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_8",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_8/crack_8_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_8/crack_8_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 138,
+      "crack_count": 138,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_110",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_110/crack_110_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_110/crack_110_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 211,
+      "crack_count": 211,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_117",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_117/crack_117_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_117/crack_117_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 103,
+      "crack_count": 103,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_12",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_12/crack_12_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_12/crack_12_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 143,
+      "crack_count": 143,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_166",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_166/crack_166_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_166/crack_166_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 178,
+      "crack_count": 178,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_40",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_40/crack_40_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_40/crack_40_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 200,
+      "crack_count": 118,
+      "spalling_count": 82
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_107",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_107/crack_107_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_107/crack_107_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 131,
+      "crack_count": 131,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_51",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_51/crack_51_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_51/crack_51_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 186,
+      "crack_count": 186,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_168",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_168/crack_168_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_168/crack_168_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 59,
+      "crack_count": 59,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_111",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_111/crack_111_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_111/crack_111_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 191,
+      "crack_count": 191,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_158",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_158/crack_158_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_158/crack_158_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 67,
+      "crack_count": 67,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_34",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_34/crack_34_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_34/crack_34_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 174,
+      "crack_count": 174,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_37",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_37/crack_37_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_37/crack_37_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 88,
+      "crack_count": 88,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_42",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_42/crack_42_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_42/crack_42_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 124,
+      "crack_count": 124,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_83",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_83/crack_83_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_83/crack_83_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 106,
+      "crack_count": 106,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_123",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_123/crack_123_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_123/crack_123_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 481,
+      "crack_count": 481,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_77",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_77/crack_77_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_77/crack_77_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 222,
+      "crack_count": 222,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_201",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_201/crack_201_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_201/crack_201_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 63,
+      "crack_count": 63,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_140",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_140/crack_140_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_140/crack_140_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 100,
+      "crack_count": 100,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_144",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_144/crack_144_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_144/crack_144_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 76,
+      "crack_count": 76,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_200",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_200/crack_200_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_200/crack_200_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 141,
+      "crack_count": 141,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_27",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_27/crack_27_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_27/crack_27_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 452,
+      "crack_count": 452,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_28",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_28/crack_28_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_28/crack_28_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 182,
+      "crack_count": 182,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_152",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_152/crack_152_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_152/crack_152_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 96,
+      "crack_count": 96,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_30",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_30/crack_30_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_30/crack_30_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 112,
+      "crack_count": 112,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_13",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_13/crack_13_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_13/crack_13_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 241,
+      "crack_count": 241,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_76",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_76/crack_76_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_76/crack_76_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 136,
+      "crack_count": 136,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_24",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_24/crack_24_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_24/crack_24_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 201,
+      "crack_count": 201,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_147",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_147/crack_147_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_147/crack_147_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 75,
+      "crack_count": 75,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_157",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_157/crack_157_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_157/crack_157_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 84,
+      "crack_count": 84,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_109",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_109/crack_109_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_109/crack_109_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 188,
+      "crack_count": 188,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_172",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_172/crack_172_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_172/crack_172_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 352,
+      "crack_count": 352,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_176",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_176/crack_176_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_176/crack_176_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 90,
+      "crack_count": 90,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_79",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_79/crack_79_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_79/crack_79_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 1258,
+      "crack_count": 1258,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_181",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_181/crack_181_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_181/crack_181_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 91,
+      "crack_count": 91,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_118",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_118/crack_118_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_118/crack_118_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 153,
+      "crack_count": 153,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_173",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_173/crack_173_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_173/crack_173_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 44,
+      "crack_count": 44,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_6",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_6/crack_6_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_6/crack_6_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 200,
+      "crack_count": 200,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_75",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_75/crack_75_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_75/crack_75_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 256,
+      "crack_count": 256,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_62",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_62/crack_62_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_62/crack_62_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 425,
+      "crack_count": 425,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_121",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_121/crack_121_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_121/crack_121_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 126,
+      "crack_count": 126,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_38",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_38/crack_38_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_38/crack_38_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 42,
+      "crack_count": 42,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_119",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_119/crack_119_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_119/crack_119_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 221,
+      "crack_count": 221,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_127",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_127/crack_127_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_127/crack_127_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 252,
+      "crack_count": 252,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_217",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_217/crack_217_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_217/crack_217_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 54,
+      "crack_count": 54,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_69",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_69/crack_69_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_69/crack_69_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 231,
+      "crack_count": 231,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_177",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_177/crack_177_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_177/crack_177_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 63,
+      "crack_count": 63,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_224",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_224/crack_224_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_224/crack_224_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 86,
+      "crack_count": 86,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_53",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_53/crack_53_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_53/crack_53_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 153,
+      "crack_count": 153,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_146",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_146/crack_146_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_146/crack_146_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 79,
+      "crack_count": 79,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_196",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_196/crack_196_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_196/crack_196_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 118,
+      "crack_count": 118,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_163",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_163/crack_163_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_163/crack_163_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 91,
+      "crack_count": 91,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_145",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_145/crack_145_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_145/crack_145_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 98,
+      "crack_count": 98,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_6/spalling_77",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/spalling_77/spalling_77_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/spalling_77/spalling_77_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 212,
+      "crack_count": 141,
+      "spalling_count": 71
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_96",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_96/crack_96_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_96/crack_96_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 92,
+      "crack_count": 92,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_164",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_164/crack_164_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_164/crack_164_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 52,
+      "crack_count": 52,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_78",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_78/crack_78_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_78/crack_78_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 310,
+      "crack_count": 310,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_70",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_70/crack_70_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_70/crack_70_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 249,
+      "crack_count": 249,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_2",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_2/crack_2_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_2/crack_2_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 290,
+      "crack_count": 290,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_82",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_82/crack_82_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_82/crack_82_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 375,
+      "crack_count": 309,
+      "spalling_count": 66
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_17",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_17/crack_17_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_17/crack_17_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 85,
+      "crack_count": 85,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_41",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_41/crack_41_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_41/crack_41_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 184,
+      "crack_count": 184,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_203",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_203/crack_203_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_203/crack_203_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 84,
+      "crack_count": 84,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_9",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_9/crack_9_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_9/crack_9_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 174,
+      "crack_count": 174,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_141",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_141/crack_141_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_141/crack_141_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 102,
+      "crack_count": 102,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_11",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_11/crack_11_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_11/crack_11_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 237,
+      "crack_count": 237,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_66",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_66/crack_66_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_66/crack_66_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 388,
+      "crack_count": 388,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_52",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_52/crack_52_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_52/crack_52_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 167,
+      "crack_count": 167,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_129",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_129/crack_129_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_129/crack_129_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 232,
+      "crack_count": 232,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_159",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_159/crack_159_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_159/crack_159_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 74,
+      "crack_count": 74,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_6/crack_129",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/crack_129/crack_129_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/crack_129/crack_129_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 71,
+      "crack_count": 71,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_6/crack_130",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/crack_130/crack_130_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/crack_130/crack_130_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 84,
+      "crack_count": 84,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_100",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_100/crack_100_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_100/crack_100_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 181,
+      "crack_count": 181,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_29",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_29/crack_29_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_29/crack_29_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 265,
+      "crack_count": 265,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_35",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_35/crack_35_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_35/crack_35_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 144,
+      "crack_count": 144,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_81",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_81/crack_81_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_81/crack_81_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 123,
+      "crack_count": 123,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_122",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_122/crack_122_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_122/crack_122_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 339,
+      "crack_count": 214,
+      "spalling_count": 125
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_91",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_91/crack_91_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_91/crack_91_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 106,
+      "crack_count": 106,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_5",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_5/crack_5_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_5/crack_5_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 251,
+      "crack_count": 251,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_175",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_175/crack_175_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_175/crack_175_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 55,
+      "crack_count": 55,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_22",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_22/crack_22_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_22/crack_22_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 225,
+      "crack_count": 225,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_125",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_125/crack_125_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_125/crack_125_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 418,
+      "crack_count": 418,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_31",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_31/crack_31_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_31/crack_31_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 172,
+      "crack_count": 172,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_68",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_68/crack_68_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_68/crack_68_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 446,
+      "crack_count": 446,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_44",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_44/crack_44_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_44/crack_44_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 375,
+      "crack_count": 375,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_128",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_128/crack_128_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_128/crack_128_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 182,
+      "crack_count": 182,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_184",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_184/crack_184_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_184/crack_184_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 54,
+      "crack_count": 54,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_1",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_1/crack_1_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_1/crack_1_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 438,
+      "crack_count": 438,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_222",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_222/crack_222_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_222/crack_222_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 70,
+      "crack_count": 70,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_169",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_169/crack_169_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_169/crack_169_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 50,
+      "crack_count": 50,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_113",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_113/crack_113_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_113/crack_113_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 426,
+      "crack_count": 426,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_49",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_49/crack_49_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_49/crack_49_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 274,
+      "crack_count": 274,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_149",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_149/crack_149_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_149/crack_149_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 49,
+      "crack_count": 49,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_54",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_54/crack_54_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_54/crack_54_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 151,
+      "crack_count": 151,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_92",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_92/crack_92_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_92/crack_92_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 52,
+      "crack_count": 52,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_134",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_134/crack_134_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_134/crack_134_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 310,
+      "crack_count": 310,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_45",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_45/crack_45_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_45/crack_45_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 196,
+      "crack_count": 196,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_130",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_130/crack_130_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_130/crack_130_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 213,
+      "crack_count": 213,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_218",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_218/crack_218_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_218/crack_218_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 95,
+      "crack_count": 95,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_156",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_156/crack_156_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_156/crack_156_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 82,
+      "crack_count": 82,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_223",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_223/crack_223_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_223/crack_223_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 99,
+      "crack_count": 99,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_179",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_179/crack_179_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_179/crack_179_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 56,
+      "crack_count": 56,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_167",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_167/crack_167_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_167/crack_167_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 97,
+      "crack_count": 97,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_10",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_10/crack_10_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_10/crack_10_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 162,
+      "crack_count": 162,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_151",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_151/crack_151_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_151/crack_151_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 65,
+      "crack_count": 65,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_74",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_74/crack_74_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_74/crack_74_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 645,
+      "crack_count": 645,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_43",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_43/crack_43_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_43/crack_43_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 254,
+      "crack_count": 254,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_44",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_44/spalling_44_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_44/spalling_44_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 101,
+      "crack_count": 0,
+      "spalling_count": 101
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_11",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_11/spalling_11_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_11/spalling_11_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 171,
+      "crack_count": 0,
+      "spalling_count": 171
+    },
+    {
+      "seq_id": "field_data_day/dset_5/spalling_71",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/spalling_71/spalling_71_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/spalling_71/spalling_71_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 110,
+      "crack_count": 0,
+      "spalling_count": 110
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_64",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_64/crack_64_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_64/crack_64_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 720,
+      "crack_count": 336,
+      "spalling_count": 384
+    },
+    {
+      "seq_id": "field_data_day/dset_4/spalling_71",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/spalling_71/spalling_71_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/spalling_71/spalling_71_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 198,
+      "crack_count": 0,
+      "spalling_count": 198
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_3",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_3/spalling_3_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_3/spalling_3_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 304,
+      "crack_count": 0,
+      "spalling_count": 304
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_42",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_42/spalling_42_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_42/spalling_42_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 127,
+      "crack_count": 0,
+      "spalling_count": 127
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_4",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_4/spalling_4_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_4/spalling_4_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 92,
+      "crack_count": 0,
+      "spalling_count": 92
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_5",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_5/spalling_5_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_5/spalling_5_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 147,
+      "crack_count": 0,
+      "spalling_count": 147
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_22",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_22/spalling_22_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_22/spalling_22_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 164,
+      "crack_count": 0,
+      "spalling_count": 164
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_23",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_23/spalling_23_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_23/spalling_23_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 538,
+      "crack_count": 0,
+      "spalling_count": 538
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_45",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_45/spalling_45_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_45/spalling_45_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 341,
+      "crack_count": 0,
+      "spalling_count": 341
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_28",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_28/spalling_28_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_28/spalling_28_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 526,
+      "crack_count": 0,
+      "spalling_count": 526
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_48",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_48/spalling_48_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_48/spalling_48_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 294,
+      "crack_count": 0,
+      "spalling_count": 294
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_46",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_46/spalling_46_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_46/spalling_46_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 253,
+      "crack_count": 0,
+      "spalling_count": 253
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_7",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_7/spalling_7_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_7/spalling_7_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 332,
+      "crack_count": 92,
+      "spalling_count": 240
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_38",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_38/spalling_38_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_38/spalling_38_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 274,
+      "crack_count": 0,
+      "spalling_count": 274
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_39",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_39/spalling_39_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_39/spalling_39_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 309,
+      "crack_count": 0,
+      "spalling_count": 309
+    },
+    {
+      "seq_id": "field_data_day/dset_4/spalling_72",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/spalling_72/spalling_72_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/spalling_72/spalling_72_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 111,
+      "crack_count": 0,
+      "spalling_count": 111
+    },
+    {
+      "seq_id": "field_data_day/at_eth/synth_spalling_121",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/at_eth/synth_spalling_121/synth_spalling_121_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/at_eth/synth_spalling_121/synth_spalling_121_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 249,
+      "crack_count": 0,
+      "spalling_count": 249
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_30",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_30/spalling_30_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_30/spalling_30_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 191,
+      "crack_count": 77,
+      "spalling_count": 114
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_24",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_24/spalling_24_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_24/spalling_24_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 164,
+      "crack_count": 0,
+      "spalling_count": 164
+    },
+    {
+      "seq_id": "field_data_day/at_eth/synth_spalling_19",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/at_eth/synth_spalling_19/synth_spalling_19_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/at_eth/synth_spalling_19/synth_spalling_19_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 132,
+      "crack_count": 0,
+      "spalling_count": 132
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_51",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_51/spalling_51_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_51/spalling_51_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 290,
+      "crack_count": 0,
+      "spalling_count": 290
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_21",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_21/spalling_21_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_21/spalling_21_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 456,
+      "crack_count": 146,
+      "spalling_count": 310
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_41",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_41/spalling_41_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_41/spalling_41_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 173,
+      "crack_count": 0,
+      "spalling_count": 173
+    },
+    {
+      "seq_id": "field_data_day/at_eth/synth_spalling_57",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/at_eth/synth_spalling_57/synth_spalling_57_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/at_eth/synth_spalling_57/synth_spalling_57_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 232,
+      "crack_count": 0,
+      "spalling_count": 232
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_14",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_14/spalling_14_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_14/spalling_14_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 427,
+      "crack_count": 0,
+      "spalling_count": 427
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_8",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_8/spalling_8_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_8/spalling_8_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 336,
+      "crack_count": 37,
+      "spalling_count": 299
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_40",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_40/spalling_40_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_40/spalling_40_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 143,
+      "crack_count": 0,
+      "spalling_count": 143
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_12",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_12/spalling_12_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_12/spalling_12_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 251,
+      "crack_count": 0,
+      "spalling_count": 251
+    },
+    {
+      "seq_id": "field_data_day/dset_5/spalling_70",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/spalling_70/spalling_70_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/spalling_70/spalling_70_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 154,
+      "crack_count": 0,
+      "spalling_count": 154
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_16",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_16/spalling_16_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_16/spalling_16_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 459,
+      "crack_count": 68,
+      "spalling_count": 391
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_35",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_35/spalling_35_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_35/spalling_35_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 72,
+      "crack_count": 0,
+      "spalling_count": 72
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_43",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_43/spalling_43_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_43/spalling_43_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 487,
+      "crack_count": 0,
+      "spalling_count": 487
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_6",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_6/spalling_6_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_6/spalling_6_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 89,
+      "crack_count": 0,
+      "spalling_count": 89
+    },
+    {
+      "seq_id": "other_data/crack_116",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/other_data/crack_116/crack_116_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/other_data/crack_116/crack_116_label.npy",
+      "condition": "other_data",
+      "num_labels": 52,
+      "crack_count": 52,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "other_data/spalling_57",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/other_data/spalling_57/spalling_57_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/other_data/spalling_57/spalling_57_label.npy",
+      "condition": "other_data",
+      "num_labels": 225,
+      "crack_count": 0,
+      "spalling_count": 225
+    },
+    {
+      "seq_id": "tunnel/t_crack_3",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_crack_3/t_crack_3_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_crack_3/t_crack_3_label.npy",
+      "condition": "tunnel",
+      "num_labels": 35,
+      "crack_count": 35,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "tunnel/t_spall_9",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_9/t_spall_9_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_9/t_spall_9_label.npy",
+      "condition": "tunnel",
+      "num_labels": 32,
+      "crack_count": 0,
+      "spalling_count": 32
+    },
+    {
+      "seq_id": "tunnel/t_spall_13",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_13/t_spall_13_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_13/t_spall_13_label.npy",
+      "condition": "tunnel",
+      "num_labels": 65,
+      "crack_count": 0,
+      "spalling_count": 65
+    },
+    {
+      "seq_id": "tunnel/t_spall_7",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_7/t_spall_7_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_7/t_spall_7_label.npy",
+      "condition": "tunnel",
+      "num_labels": 307,
+      "crack_count": 0,
+      "spalling_count": 307
+    }
+  ],
+  "val": [
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_21",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_21/dec_25_21_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_21/dec_25_21_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 5,
+      "crack_count": 5,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_jan_2/2_jan_crack_44",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_jan_2/2_jan_crack_44/2_jan_crack_44_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_jan_2/2_jan_crack_44/2_jan_crack_44_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 10,
+      "crack_count": 10,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_38",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_38/ros_crack_38_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_38/ros_crack_38_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 485,
+      "crack_count": 485,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_43",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_43/31_crack_43_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_43/31_crack_43_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 52,
+      "crack_count": 52,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_10",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_10/ros_crack_10_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_10/ros_crack_10_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 229,
+      "crack_count": 229,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_12",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_12/ros_crack_12_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_12/ros_crack_12_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 237,
+      "crack_count": 237,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_9",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_9/27_crack_9_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_9/27_crack_9_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 31,
+      "crack_count": 31,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_9",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_9/dec_25_9_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_9/dec_25_9_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 30,
+      "crack_count": 30,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_2",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_2/ros_crack_2_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_2/ros_crack_2_frame_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 681,
+      "crack_count": 681,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_4",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_4/dec_25_4_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_4/dec_25_4_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 115,
+      "crack_count": 115,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_31",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_31/13_march_outdoor_31_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_31/13_march_outdoor_31_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 80,
+      "crack_count": 0,
+      "spalling_count": 80
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_28",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_28/13_march_outdoor_28_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_28/13_march_outdoor_28_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 44,
+      "crack_count": 0,
+      "spalling_count": 44
+    },
+    {
+      "seq_id": "day_time_challenge/crack_88",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/crack_88/crack_88_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/crack_88/crack_88_label.npy",
+      "condition": "day_time_challenge",
+      "num_labels": 102,
+      "crack_count": 102,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_183",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_183/crack_183_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_183/crack_183_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 55,
+      "crack_count": 55,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_61",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_61/crack_61_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_61/crack_61_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 787,
+      "crack_count": 534,
+      "spalling_count": 253
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_165",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_165/crack_165_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_165/crack_165_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 243,
+      "crack_count": 243,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_101",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_101/crack_101_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_101/crack_101_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 101,
+      "crack_count": 101,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_102",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_102/crack_102_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_102/crack_102_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 158,
+      "crack_count": 158,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_221",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_221/crack_221_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_221/crack_221_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 102,
+      "crack_count": 102,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_80",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_80/crack_80_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_80/crack_80_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 178,
+      "crack_count": 178,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_212",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_212/crack_212_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_212/crack_212_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 93,
+      "crack_count": 93,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_120",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_120/crack_120_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_120/crack_120_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 128,
+      "crack_count": 128,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_215",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_215/crack_215_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_215/crack_215_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 190,
+      "crack_count": 190,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_3",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_3/crack_3_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_3/crack_3_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 376,
+      "crack_count": 376,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_213",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_213/crack_213_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_213/crack_213_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 108,
+      "crack_count": 108,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_50",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_50/crack_50_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_50/crack_50_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 155,
+      "crack_count": 155,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_4",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_4/crack_4_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_4/crack_4_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 441,
+      "crack_count": 441,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_21",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_21/crack_21_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_21/crack_21_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 245,
+      "crack_count": 245,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_32",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_32/crack_32_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_32/crack_32_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 258,
+      "crack_count": 258,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_170",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_170/crack_170_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_170/crack_170_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 66,
+      "crack_count": 66,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_174",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_174/crack_174_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_174/crack_174_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 67,
+      "crack_count": 67,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_197",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_197/crack_197_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_197/crack_197_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 144,
+      "crack_count": 144,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_225",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_225/crack_225_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_225/crack_225_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 427,
+      "crack_count": 427,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_126",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_126/crack_126_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_126/crack_126_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 175,
+      "crack_count": 175,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_219",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_219/crack_219_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_219/crack_219_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 104,
+      "crack_count": 104,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_150",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_150/crack_150_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_150/crack_150_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 62,
+      "crack_count": 62,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_228",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_228/crack_228_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_228/crack_228_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 86,
+      "crack_count": 86,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_182",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_182/crack_182_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_182/crack_182_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 55,
+      "crack_count": 55,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_9",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_9/spalling_9_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_9/spalling_9_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 28,
+      "crack_count": 0,
+      "spalling_count": 28
+    },
+    {
+      "seq_id": "field_data_day/dset_6/spalling_76",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/spalling_76/spalling_76_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/spalling_76/spalling_76_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 207,
+      "crack_count": 0,
+      "spalling_count": 207
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_25",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_25/spalling_25_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_25/spalling_25_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 270,
+      "crack_count": 0,
+      "spalling_count": 270
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_32",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_32/spalling_32_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_32/spalling_32_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 191,
+      "crack_count": 0,
+      "spalling_count": 191
+    },
+    {
+      "seq_id": "field_data_day/dset_4/spalling_70",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/spalling_70/spalling_70_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/spalling_70/spalling_70_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 153,
+      "crack_count": 0,
+      "spalling_count": 153
+    },
+    {
+      "seq_id": "field_data_day/dset_1/spalling_13",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_13/spalling_13_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/spalling_13/spalling_13_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 290,
+      "crack_count": 0,
+      "spalling_count": 290
+    },
+    {
+      "seq_id": "field_data_day/dset_3/spalling_56",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/spalling_56/spalling_56_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/spalling_56/spalling_56_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 422,
+      "crack_count": 0,
+      "spalling_count": 422
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_52",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_52/spalling_52_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_52/spalling_52_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 185,
+      "crack_count": 0,
+      "spalling_count": 185
+    },
+    {
+      "seq_id": "other_data/crack_39",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/other_data/crack_39/crack_39_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/other_data/crack_39/crack_39_label.npy",
+      "condition": "other_data",
+      "num_labels": 217,
+      "crack_count": 217,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "other_data/crack_124",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/other_data/crack_124/crack_124_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/other_data/crack_124/crack_124_label.npy",
+      "condition": "other_data",
+      "num_labels": 431,
+      "crack_count": 78,
+      "spalling_count": 353
+    },
+    {
+      "seq_id": "tunnel/t_spall_10",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_10/t_spall_10_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_10/t_spall_10_label.npy",
+      "condition": "tunnel",
+      "num_labels": 5,
+      "crack_count": 5,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "tunnel/t_spall_1",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_1/t_spall_1_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_1/t_spall_1_label.npy",
+      "condition": "tunnel",
+      "num_labels": 694,
+      "crack_count": 0,
+      "spalling_count": 694
+    }
+  ],
+  "test": [
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_45",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_45/31_crack_45_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_45/31_crack_45_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 16,
+      "crack_count": 16,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_51",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_51/31_crack_51_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_51/31_crack_51_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 33,
+      "crack_count": 33,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_20",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_20/31_crack_20_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_20/31_crack_20_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 19,
+      "crack_count": 19,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_21",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_21/ros_crack_21_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_21/ros_crack_21_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 411,
+      "crack_count": 411,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_31st_dec/31_crack_30",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_30/31_crack_30_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_31st_dec/31_crack_30/31_crack_30_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 92,
+      "crack_count": 92,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/27_crack_1",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_1/27_crack_1_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/27_crack_1/27_crack_1_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 107,
+      "crack_count": 107,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_10",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_10/dec_25_10_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_10/dec_25_10_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 38,
+      "crack_count": 38,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_18",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_18/dec_25_18_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_18/dec_25_18_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 583,
+      "crack_count": 583,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_27th_dec/dec_25_5",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_5/dec_25_5_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_27th_dec/dec_25_5/dec_25_5_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 26,
+      "crack_count": 26,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_14",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_14/ros_crack_14_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_14/ros_crack_14_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 252,
+      "crack_count": 252,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_outdoor_18th_Nov/ros_crack_5",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_5/ros_crack_5_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_outdoor_18th_Nov/ros_crack_5/ros_crack_5_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 248,
+      "crack_count": 248,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_3",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_3/13_march_outdoor_3_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_3/13_march_outdoor_3_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 120,
+      "crack_count": 0,
+      "spalling_count": 120
+    },
+    {
+      "seq_id": "Night_outdoor/night_spalling/13_march_outdoor_1",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_1/13_march_outdoor_1_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/Night_outdoor/night_spalling/13_march_outdoor_1/13_march_outdoor_1_label.npy",
+      "condition": "Night_outdoor",
+      "num_labels": 336,
+      "crack_count": 0,
+      "spalling_count": 336
+    },
+    {
+      "seq_id": "day_time_challenge/crack_133",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/crack_133/crack_133_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/crack_133/crack_133_frame_label.npy",
+      "condition": "day_time_challenge",
+      "num_labels": 390,
+      "crack_count": 390,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "day_time_challenge/spalling_31",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/spalling_31/spalling_31_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/day_time_challenge/spalling_31/spalling_31_label.npy",
+      "condition": "day_time_challenge",
+      "num_labels": 26,
+      "crack_count": 0,
+      "spalling_count": 26
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_67",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_67/crack_67_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_67/crack_67_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 369,
+      "crack_count": 369,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_46",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_46/crack_46_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_46/crack_46_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 85,
+      "crack_count": 85,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_71",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_71/crack_71_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_71/crack_71_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 507,
+      "crack_count": 507,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_47",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_47/crack_47_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_47/crack_47_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 146,
+      "crack_count": 146,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_161",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_161/crack_161_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_161/crack_161_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 69,
+      "crack_count": 69,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_142",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_142/crack_142_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_142/crack_142_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 103,
+      "crack_count": 103,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_171",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_171/crack_171_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_171/crack_171_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 47,
+      "crack_count": 47,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_216",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_216/crack_216_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_216/crack_216_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 291,
+      "crack_count": 291,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_220",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_220/crack_220_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_220/crack_220_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 61,
+      "crack_count": 61,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_202",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_202/crack_202_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_202/crack_202_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 120,
+      "crack_count": 120,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_112",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_112/crack_112_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_112/crack_112_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 232,
+      "crack_count": 232,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_26",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_26/crack_26_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_26/crack_26_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 80,
+      "crack_count": 80,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_72",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_72/crack_72_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_72/crack_72_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 115,
+      "crack_count": 115,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_143",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_143/crack_143_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_143/crack_143_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 108,
+      "crack_count": 108,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_87",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_87/crack_87_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_87/crack_87_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 247,
+      "crack_count": 247,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_18",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_18/crack_18_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_18/crack_18_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 438,
+      "crack_count": 438,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_60",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_60/crack_60_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_60/crack_60_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 240,
+      "crack_count": 240,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_1/crack_23",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_23/crack_23_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_1/crack_23/crack_23_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 364,
+      "crack_count": 364,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_93",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_93/crack_93_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_93/crack_93_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 77,
+      "crack_count": 77,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_114",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_114/crack_114_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_114/crack_114_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 230,
+      "crack_count": 230,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_5/crack_198",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_198/crack_198_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_5/crack_198/crack_198_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 157,
+      "crack_count": 157,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_2/crack_73",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_73/crack_73_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/crack_73/crack_73_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 377,
+      "crack_count": 377,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/crack_132",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_132/crack_132_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/crack_132/crack_132_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 461,
+      "crack_count": 461,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_4/crack_162",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_162/crack_162_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_4/crack_162/crack_162_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 116,
+      "crack_count": 116,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "field_data_day/dset_3/spalling_55",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/spalling_55/spalling_55_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/spalling_55/spalling_55_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 421,
+      "crack_count": 0,
+      "spalling_count": 421
+    },
+    {
+      "seq_id": "field_data_day/at_eth/synth_spalling_85",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/at_eth/synth_spalling_85/synth_spalling_85_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/at_eth/synth_spalling_85/synth_spalling_85_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 250,
+      "crack_count": 0,
+      "spalling_count": 250
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_36",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_36/spalling_36_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_36/spalling_36_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 199,
+      "crack_count": 0,
+      "spalling_count": 199
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_33",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_33/spalling_33_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_33/spalling_33_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 87,
+      "crack_count": 0,
+      "spalling_count": 87
+    },
+    {
+      "seq_id": "field_data_day/dset_6/spalling_75",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/spalling_75/spalling_75_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_6/spalling_75/spalling_75_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 77,
+      "crack_count": 0,
+      "spalling_count": 77
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_27",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_27/spalling_27_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_27/spalling_27_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 308,
+      "crack_count": 0,
+      "spalling_count": 308
+    },
+    {
+      "seq_id": "field_data_day/dset_2/spalling_34",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_34/spalling_34_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_2/spalling_34/spalling_34_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 142,
+      "crack_count": 0,
+      "spalling_count": 142
+    },
+    {
+      "seq_id": "field_data_day/dset_3/spalling_54",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/spalling_54/spalling_54_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/field_data_day/dset_3/spalling_54/spalling_54_label.npy",
+      "condition": "field_data_day",
+      "num_labels": 250,
+      "crack_count": 0,
+      "spalling_count": 250
+    },
+    {
+      "seq_id": "other_data/crack_106",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/other_data/crack_106/crack_106_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/other_data/crack_106/crack_106_label.npy",
+      "condition": "other_data",
+      "num_labels": 200,
+      "crack_count": 200,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "other_data/spalling_31",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/other_data/spalling_31/spalling_31_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/other_data/spalling_31/spalling_31_label.npy",
+      "condition": "other_data",
+      "num_labels": 116,
+      "crack_count": 0,
+      "spalling_count": 116
+    },
+    {
+      "seq_id": "tunnel/crack_with_filt_1",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/tunnel/crack_with_filt_1/crack_with_filt_1_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/tunnel/crack_with_filt_1/crack_with_filt_1_label.npy",
+      "condition": "tunnel",
+      "num_labels": 5,
+      "crack_count": 5,
+      "spalling_count": 0
+    },
+    {
+      "seq_id": "tunnel/t_spall_5",
+      "h5_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_5/t_spall_5_events.h5",
+      "npy_path": "/Users/trantung/Downloads/Field_dataset/tunnel/t_spall_5/t_spall_5_label.npy",
+      "condition": "tunnel",
+      "num_labels": 274,
+      "crack_count": 0,
+      "spalling_count": 274
+    }
+  ]
+}
