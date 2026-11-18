@@ -8,6 +8,7 @@ from collections import defaultdict
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+import argparse
 
 try:
     from encoding import load_events_from_h5, encode_events_2ch_lif
@@ -289,7 +290,11 @@ def evaluate_and_select_lif_params(
 
 
 def main():
-    dataset_root = "/Users/trantung/Downloads/Field_dataset/"
+    parser = argparse.ArgumentParser(description="Huấn luyện QKFormerDetector trên tập ev-CIVIL")
+    parser.add_argument("--dataset-root", type=str, default=".", help="Đường dẫn tới thư mục gốc của Field/Laboratory dataset")
+    args = parser.parse_args()
+
+    dataset_root = args.dataset_root
 
     # 1. Quét và chia dữ liệu thành Train (70%) / Val (15%) / Test (15%)
     splits = discover_and_split_dataset(
