@@ -9,6 +9,11 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import gc
+from torch.cuda.amp import autocast, GradScaler
+
+# Giải pháp 1: Chống phân mảnh VRAM do PyTorch gây ra
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 try:
     from dataset import build_dataloaders
@@ -25,19 +30,16 @@ except ImportError:
 def compute_ciou(boxes1: torch.Tensor, boxes2: torch.Tensor, eps: float = 1e-7) -> tuple[torch.Tensor, torch.Tensor]:
     """
     Tính Complete IoU (CIoU) và IoU chuẩn giữa hai tập hộp giới hạn [x1, y1, x2, y2] tương ứng 1-1.
-    CIoU tối ưu đồng thời diện tích giao, khoảng cách tâm và tỷ lệ khung hình (hiệu quả cho vết nứt mảnh).
     """
     b1_x1, b1_y1, b1_x2, b1_y2 = boxes1[:, 0], boxes1[:, 1], boxes1[:, 2], boxes1[:, 3]
     b2_x1, b2_y1, b2_x2, b2_y2 = boxes2[:, 0], boxes2[:, 1], boxes2[:, 2], boxes2[:, 3]
 
-    # Diện tích giao (Intersection)
     inter_x1 = torch.maximum(b1_x1, b2_x1)
     inter_y1 = torch.maximum(b1_y1, b2_y1)
     inter_x2 = torch.minimum(b1_x2, b2_x2)
     inter_y2 = torch.minimum(b1_y2, b2_y2)
     inter_area = torch.clamp(inter_x2 - inter_x1, min=0.0) * torch.clamp(inter_y2 - inter_y1, min=0.0)
 
-    # Diện tích hợp (Union)
     w1 = torch.clamp(b1_x2 - b1_x1, min=eps)
     h1 = torch.clamp(b1_y2 - b1_y1, min=eps)
     w2 = torch.clamp(b2_x2 - b2_x1, min=eps)
@@ -45,19 +47,16 @@ def compute_ciou(boxes1: torch.Tensor, boxes2: torch.Tensor, eps: float = 1e-7) 
     union_area = w1 * h1 + w2 * h2 - inter_area + eps
     iou = inter_area / union_area
 
-    # Khoảng cách bình phương giữa hai tâm
     cx1, cy1 = 0.5 * (b1_x1 + b1_x2), 0.5 * (b1_y1 + b1_y2)
     cx2, cy2 = 0.5 * (b2_x1 + b2_x2), 0.5 * (b2_y1 + b2_y2)
     center_dist_sq = (cx1 - cx2).pow(2) + (cy1 - cy2).pow(2)
 
-    # Đường chéo bình phương của hình chữ nhật bao ngoài nhỏ nhất
     enc_x1 = torch.minimum(b1_x1, b2_x1)
     enc_y1 = torch.minimum(b1_y1, b2_y1)
     enc_x2 = torch.maximum(b1_x2, b2_x2)
     enc_y2 = torch.maximum(b1_y2, b2_y2)
     c_sq = (enc_x2 - enc_x1).pow(2) + (enc_y2 - enc_y1).pow(2) + eps
 
-    # Thành phần phạt tỷ lệ khung hình (Aspect Ratio Consistency)
     v = (4.0 / (math.pi ** 2)) * (torch.atan(w2 / h2) - torch.atan(w1 / h1)).pow(2)
     with torch.no_grad():
         alpha = v / (1.0 - iou + v + eps)
@@ -67,11 +66,6 @@ def compute_ciou(boxes1: torch.Tensor, boxes2: torch.Tensor, eps: float = 1e-7) 
 
 
 class SpikingDetectionLoss(nn.Module):
-    """
-    Hàm mất mát huấn luyện cho QKFormerDetector đồng bộ hoàn toàn với công thức giải mã tọa độ.
-    Sử dụng phân bổ mẫu đa tỷ lệ (Scale-aware Center Assignment) và chuẩn hóa theo số vật thể dương tính.
-    """
-
     def __init__(
         self,
         num_classes: int = 2,
@@ -91,11 +85,6 @@ class SpikingDetectionLoss(nn.Module):
         anchors: torch.Tensor,
         targets: list[list[dict[str, torch.Tensor]]],
     ) -> tuple[torch.Tensor, dict[str, float]]:
-        """
-        preds  : Tensor (B, T, M, 5 + num_classes)
-        anchors: Tensor (M, 3) gồm [gx, gy, stride]
-        targets: List[B][T] chứa {'boxes': [K, 4], 'labels': [K]}
-        """
         B, T, M, _ = preds.shape
         device = preds.device
 
@@ -116,7 +105,7 @@ class SpikingDetectionLoss(nn.Module):
                 gt_labels = targets[b][t]["labels"].to(device)
                 K = gt_boxes.shape[0]
 
-                pred_frame = preds[b, t]  # (M, 5 + C)
+                pred_frame = preds[b, t]
                 obj_target = torch.zeros((M,), device=device, dtype=torch.float32)
 
                 if K > 0:
@@ -124,9 +113,8 @@ class SpikingDetectionLoss(nn.Module):
                     gt_cy = 0.5 * (gt_boxes[:, 1] + gt_boxes[:, 3])
                     gt_w = gt_boxes[:, 2] - gt_boxes[:, 0]
                     gt_h = gt_boxes[:, 3] - gt_boxes[:, 1]
-                    gt_max_size = torch.maximum(gt_w, gt_h)  # (K,)
+                    gt_max_size = torch.maximum(gt_w, gt_h)
 
-                    # 1. Kiểm tra tâm anchor nằm trong hộp GT hoặc vùng lân cận 1.5 * stride
                     in_box = (
                         (ax[:, None] >= gt_boxes[None, :, 0])
                         & (ax[:, None] <= gt_boxes[None, :, 2])
@@ -138,22 +126,19 @@ class SpikingDetectionLoss(nn.Module):
                         & (torch.abs(ay[:, None] - gt_cy[None, :]) <= 1.5 * stride[:, None])
                     )
 
-                    # 2. Phân tầng tỷ lệ (P3=8 cho vết nứt mảnh, P4=16 & P5=32 cho bong tróc lớn)
                     is_p3 = (stride[:, None] == 8.0) & (gt_max_size[None, :] <= 80.0)
                     is_p4 = (stride[:, None] == 16.0) & (gt_max_size[None, :] > 32.0) & (gt_max_size[None, :] <= 160.0)
                     is_p5 = (stride[:, None] == 32.0) & (gt_max_size[None, :] > 96.0)
                     scale_ok = is_p3 | is_p4 | is_p5
 
-                    match_matrix = (in_box | in_center) & scale_ok  # (M, K)
+                    match_matrix = (in_box | in_center) & scale_ok
 
-                    # Đảm bảo mọi hộp GT đều có ít nhất 1 anchor phụ trách (tránh bỏ sót vết nứt siêu nhỏ)
                     for k in range(K):
                         if not torch.any(match_matrix[:, k]):
                             dist_sq = (ax - gt_cx[k]).pow(2) + (ay - gt_cy[k]).pow(2)
                             best_anchor = int(torch.argmin(dist_sq).item())
                             match_matrix[best_anchor, k] = True
 
-                    # Nếu 1 anchor khớp nhiều hộp GT, ưu tiên gán cho hộp có diện tích nhỏ hơn
                     gt_areas = (gt_w * gt_h)[None, :].expand(M, K)
                     cost_matrix = torch.where(match_matrix, gt_areas, torch.full_like(gt_areas, 1e12))
                     min_cost, matched_gt_idx = cost_matrix.min(dim=1)
@@ -165,7 +150,6 @@ class SpikingDetectionLoss(nn.Module):
                         p_pos = pred_frame[pos_mask]
                         gt_idx_pos = matched_gt_idx[pos_mask]
 
-                        # Giải mã tọa độ dự đoán khớp 100% với hàm decode_predictions
                         gx_p = gx[pos_mask]
                         gy_p = gy[pos_mask]
                         st_p = stride[pos_mask]
@@ -181,16 +165,13 @@ class SpikingDetectionLoss(nn.Module):
                         ciou, ious = compute_ciou(pred_xyxy, target_xyxy)
                         total_box_loss = total_box_loss + (1.0 - ciou).sum()
 
-                        # Mục tiêu objectness tỷ lệ thuận với chất lượng IoU của hộp dự đoán
                         obj_target[pos_mask] = ious.detach().clamp(min=0.1, max=1.0)
 
-                        # Mất mát phân loại (Crack vs Spalling)
                         cls_target = F.one_hot(gt_labels[gt_idx_pos], num_classes=self.num_classes).float()
                         total_cls_loss = total_cls_loss + F.binary_cross_entropy_with_logits(
                             p_pos[:, 5:], cls_target, reduction="sum"
                         )
 
-                # Focal-weighted Objectness Loss trên toàn bộ 1925 anchors (chống mất cân bằng nền)
                 obj_logits = pred_frame[:, 4]
                 bce_obj = F.binary_cross_entropy_with_logits(obj_logits, obj_target, reduction="none")
                 p_t = torch.sigmoid(obj_logits) * obj_target + (1.0 - torch.sigmoid(obj_logits)) * (1.0 - obj_target)
@@ -217,7 +198,6 @@ class SpikingDetectionLoss(nn.Module):
 # ==============================================================================
 
 def box_iou_matrix(boxes1: np.ndarray, boxes2: np.ndarray) -> np.ndarray:
-    """Tính ma trận IoU (N, M) giữa hai tập hộp [x1, y1, x2, y2]."""
     area1 = (boxes1[:, 2] - boxes1[:, 0]) * (boxes1[:, 3] - boxes1[:, 1])
     area2 = (boxes2[:, 2] - boxes2[:, 0]) * (boxes2[:, 3] - boxes2[:, 1])
 
@@ -230,16 +210,13 @@ def box_iou_matrix(boxes1: np.ndarray, boxes2: np.ndarray) -> np.ndarray:
     union = area1[:, None] + area2[None, :] - inter + 1e-7
     return inter / union
 
-
 def compute_ap_from_pr(recalls: np.ndarray, precisions: np.ndarray) -> float:
-    """Tính Average Precision (AP) bằng tích phân đường bao Precision-Recall (chuẩn COCO/VOC)."""
     mrec = np.concatenate(([0.0], recalls, [1.0]))
     mpre = np.concatenate(([0.0], precisions, [0.0]))
     for i in range(len(mpre) - 1, 0, -1):
         mpre[i - 1] = np.maximum(mpre[i - 1], mpre[i])
     idx = np.where(mrec[1:] != mrec[:-1])[0]
     return float(np.sum((mrec[idx + 1] - mrec[idx]) * mpre[idx + 1]))
-
 
 @torch.no_grad()
 def evaluate_map50(
@@ -250,7 +227,6 @@ def evaluate_map50(
     conf_thresh: float = 0.05,
     max_batches: int | None = None,
 ) -> dict[str, float]:
-    """Đánh giá mAP@0.5 và thống kê năng lượng SOPs thực tế trên tập Validation/Test."""
     model.eval()
     num_classes = model.num_classes
 
@@ -266,10 +242,15 @@ def evaluate_map50(
             break
 
         spikes = spikes.to(device)
-        preds, anchors = model(spikes)
+        
+        # Thêm context autocast vào quá trình đánh giá để nhất quán và tiết kiệm bộ nhớ
+        with autocast():
+            preds, anchors = model(spikes)
+        
         sops_stats_list.append(model.estimate_sops_and_energy(T=spikes.shape[1]))
 
-        decoded = model.decode_predictions(preds, anchors, conf_thresh=conf_thresh, nms_thresh=0.45)
+        # Đảm bảo preds trở về dạng FP32 cho việc decode chính xác nếu nó ở FP16
+        decoded = model.decode_predictions(preds.float(), anchors.float(), conf_thresh=conf_thresh, nms_thresh=0.45)
         B, T = spikes.shape[0], spikes.shape[1]
 
         for b in range(B):
@@ -292,6 +273,8 @@ def evaluate_map50(
                         preds_by_class[c].append((frame_uid, float(score_p), box_p))
 
                 frame_uid += 1
+                
+        del spikes, preds, anchors, decoded
 
     ap_per_class = {}
     for c in range(num_classes):
@@ -356,6 +339,7 @@ def train_one_epoch(
     criterion: SpikingDetectionLoss,
     dataloader: torch.utils.data.DataLoader,
     optimizer: torch.optim.Optimizer,
+    scaler: GradScaler,      # Giải pháp 2: Sử dụng Scaler để điều chỉnh gradient cho AMP
     device: torch.device,
     epoch: int,
     grad_accum_steps: int = 1,
@@ -376,16 +360,23 @@ def train_one_epoch(
             break
 
         spikes = spikes.to(device)
-        preds, anchors = model(spikes)
-        loss, metrics = criterion(preds, anchors, targets)
+        
+        # Giải pháp 2: Automatic Mixed Precision (AMP) - Ép kiểu tự động sang FP16 giảm nửa RAM
+        with autocast():
+            preds, anchors = model(spikes)
+            loss, metrics = criterion(preds, anchors, targets)
+            loss_scaled = loss / float(grad_accum_steps)
 
-        loss_scaled = loss / float(grad_accum_steps)
-        loss_scaled.backward()
+        # Giải pháp 2: Tối ưu ngược với GradScaler
+        scaler.scale(loss_scaled).backward()
 
         if (step + 1) % grad_accum_steps == 0 or (step + 1) == total_steps:
-            # Cắt ngưỡng gradient (Gradient Clipping) giúp Surrogate Gradient của SNN hội tụ ổn định
+            # Unscale gradient trước khi kẹp
+            scaler.unscale_(optimizer)
             torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
-            optimizer.step()
+            
+            scaler.step(optimizer)
+            scaler.update()
             optimizer.zero_grad()
 
         for k in running:
@@ -400,6 +391,13 @@ def train_one_epoch(
                 f"(Box: {running['box']/num_steps:.4f}, Obj: {running['obj']/num_steps:.4f}, "
                 f"Cls: {running['cls']/num_steps:.4f}) | Pos: {metrics['pos_anchors']} | {elapsed:.1f}s"
             )
+            
+        # Giải pháp 3: Giải phóng bộ nhớ GPU của các biến tạm sau mỗi batch
+        del spikes, targets, preds, anchors, loss, loss_scaled
+        
+    # Xóa cache rác sau mỗi epoch
+    torch.cuda.empty_cache()
+    gc.collect()
 
     denom = max(1, num_steps)
     return {k: v / denom for k, v in running.items()}
@@ -409,8 +407,9 @@ def main():
     parser = argparse.ArgumentParser(description="Huấn luyện QKFormerDetector trên tập ev-CIVIL")
     parser.add_argument("--split-json", type=str, default="dataset_splits.json", help="Đường dẫn file chia tập")
     parser.add_argument("--epochs", type=int, default=30, help="Số epoch huấn luyện")
-    parser.add_argument("--batch-size", type=int, default=4, help="Kích thước batch (mỗi mẫu là 25 frames)")
-    parser.add_argument("--grad-accum", type=int, default=2, help="Số bước tích lũy gradient")
+    # Giải pháp 4: Mặc định giảm Batch Size xuống 2 để đảm bảo không bị OOM, bù đắp bằng grad_accum
+    parser.add_argument("--batch-size", type=int, default=2, help="Kích thước batch (mỗi mẫu là 25 frames)")
+    parser.add_argument("--grad-accum", type=int, default=4, help="Số bước tích lũy gradient")
     parser.add_argument("--lr", type=float, default=3e-4, help="Tốc độ học khởi tạo (AdamW)")
     parser.add_argument("--weight-decay", type=float, default=1e-2, help="Hệ số điều chuẩn Weight Decay")
     parser.add_argument("--num-workers", type=int, default=2, help="Số luồng đọc HDF5 song song")
@@ -439,6 +438,9 @@ def main():
     model = QKFormerDetector(num_classes=2, embed_dims=(64, 128, 256, 320), fpn_dim=128).to(device)
     criterion = SpikingDetectionLoss(num_classes=2, lambda_box=5.0, lambda_obj=1.0, lambda_cls=1.0)
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
+    
+    # Khởi tạo Scaler cho Mixed Precision
+    scaler = GradScaler()
 
     epochs = 2 if args.sanity_check else args.epochs
     max_batches = 5 if args.sanity_check else None
@@ -454,6 +456,7 @@ def main():
             criterion=criterion,
             dataloader=train_loader,
             optimizer=optimizer,
+            scaler=scaler,
             device=device,
             epoch=epoch,
             grad_accum_steps=args.grad_accum,
@@ -480,7 +483,6 @@ def main():
         epoch_record = {"epoch": epoch, "train": train_metrics, "val": val_metrics}
         history.append(epoch_record)
 
-        # Lưu checkpoint mới nhất và checkpoint đạt mAP@0.5 cao nhất
         torch.save(
             {"epoch": epoch, "model_state_dict": model.state_dict(), "val_metrics": val_metrics, "args": vars(args)},
             os.path.join(args.save_dir, "last_model.pt"),
@@ -496,7 +498,6 @@ def main():
         with open(os.path.join(args.save_dir, "training_history.json"), "w", encoding="utf-8") as f:
             json.dump(history, f, indent=2)
 
-    # Đánh giá cuối cùng trên tập TEST với trọng số tốt nhất
     best_ckpt = torch.load(os.path.join(args.save_dir, "best_model.pt"), map_location=device)
     model.load_state_dict(best_ckpt["model_state_dict"])
     test_metrics = evaluate_map50(
@@ -517,7 +518,6 @@ def main():
         f"  - Energy Saving : {test_metrics['energy_saving_pct']:.2f}%"
     )
     print("=" * 76)
-
 
 if __name__ == "__main__":
     main()
