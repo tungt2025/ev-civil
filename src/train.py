@@ -403,6 +403,33 @@ def train_one_epoch(
     return {k: v / denom for k, v in running.items()}
 
 
+def resolve_lif_params(
+    tau_us_cli: float | None,
+    v_th_cli: float | None,
+    params_json: str,
+    default_tau_us: float = 40000.0,
+    default_v_th: float = 1.2,
+) -> tuple[float, float]:
+    file_params = {}
+    if params_json:
+        params_path = os.path.abspath(params_json)
+        if os.path.isfile(params_path):
+            with open(params_path, "r", encoding="utf-8") as f:
+                file_params = json.load(f)
+            if not isinstance(file_params, dict):
+                raise ValueError(f"File tham số phải chứa một JSON object: {params_path}")
+
+    tau_us = tau_us_cli
+    if tau_us is None:
+        tau_us = file_params.get("tau_us", default_tau_us)
+
+    v_th = v_th_cli
+    if v_th is None:
+        v_th = file_params.get("v_th", default_v_th)
+
+    return float(tau_us), float(v_th)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Huấn luyện QKFormerDetector trên tập ev-CIVIL")
     parser.add_argument("--split-json", type=str, default="dataset_splits.json", help="Đường dẫn file chia tập")
@@ -413,8 +440,24 @@ def main():
     parser.add_argument("--lr", type=float, default=3e-4, help="Tốc độ học khởi tạo (AdamW)")
     parser.add_argument("--weight-decay", type=float, default=1e-2, help="Hệ số điều chuẩn Weight Decay")
     parser.add_argument("--num-workers", type=int, default=2, help="Số luồng đọc HDF5 song song")
-    parser.add_argument("--tau-us", type=float, default=40000.0, help="Hằng số suy giảm LIF (us)")
-    parser.add_argument("--v-th", type=float, default=1.2, help="Ngưỡng phát xung LIF")
+    parser.add_argument(
+        "--params-json",
+        type=str,
+        default="params.json",
+        help="File JSON chứa tau_us và v_th, ví dụ params.json",
+    )
+    parser.add_argument(
+        "--tau-us",
+        type=float,
+        default=None,
+        help="Hằng số suy giảm LIF (us); ghi đè giá trị từ params.json",
+    )
+    parser.add_argument(
+        "--v-th",
+        type=float,
+        default=None,
+        help="Ngưỡng phát xung LIF; ghi đè giá trị từ params.json",
+    )
     parser.add_argument("--save-dir", type=str, default="checkpoints", help="Thư mục lưu trọng số")
     parser.add_argument(
         "--resume",
@@ -424,6 +467,12 @@ def main():
     )
     parser.add_argument("--sanity-check", action="store_true", help="Chạy thử nhanh 5 batch để kiểm tra pipeline")
     args = parser.parse_args()
+    tau_us, v_th = resolve_lif_params(
+        tau_us_cli=args.tau_us,
+        v_th_cli=args.v_th,
+        params_json=args.params_json,
+    )
+    print(f"LIF params -> tau_us={tau_us:.0f}, v_th={v_th}")
 
     os.makedirs(args.save_dir, exist_ok=True)
     device = get_device()
@@ -433,8 +482,8 @@ def main():
         split_json=args.split_json,
         batch_size=args.batch_size,
         num_workers=args.num_workers,
-        tau_us=args.tau_us,
-        v_th=args.v_th,
+        tau_us=tau_us,
+        v_th=v_th,
     )
     print(
         f"Dữ liệu đã sẵn sàng -> Train: {len(train_loader.dataset)} clips | "

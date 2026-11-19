@@ -153,6 +153,7 @@ def evaluate_and_select_lif_params(
     H: int = 260,
     W: int = 346,
     N: int = 25,
+    params_path: str = "params.json",
 ) -> tuple[float, float]:
     """
     Đánh giá lưới tham số (tau_us, v_th) trên các chuỗi đại diện của tập TRAIN
@@ -259,6 +260,12 @@ def evaluate_and_select_lif_params(
         f"tau_us = {best_params[0]:.0f} ({best_params[0]/1000:.0f} ms), v_th = {best_params[1]} "
         f"(Score = {best_score:.3f})\n"
     )
+    params_dir = os.path.dirname(os.path.abspath(params_path))
+    os.makedirs(params_dir, exist_ok=True)
+    with open(params_path, "w", encoding="utf-8") as f:
+        json.dump({"tau_us": best_params[0], "v_th": best_params[1]}, f, indent=2)
+        f.write("\n")
+    print(f"Đã lưu tham số tối ưu tại: {params_path}")
 
     # Vẽ ảnh kiểm tra chất lượng với bộ tham số tối ưu vừa chọn
     if vis_sample_data is not None:
