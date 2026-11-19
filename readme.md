@@ -8,3 +8,8 @@ Bước 2 — Chạy huấn luyện đầy đủ trên toàn bộ tập ev-CIVIL
 ```bash
 python src/train.py --epochs 30 --batch-size 4 --grad-accum 2 --num-workers 2
 ```
+
+Có thể tiếp tục huấn luyện từ checkpoint (giá trị `--epochs` là tổng số epoch cần đạt):
+```bash
+python src/train.py --resume checkpoints/best_model.pt --epochs 50 --batch-size 4 --grad-accum 2 --num-workers 2
+```

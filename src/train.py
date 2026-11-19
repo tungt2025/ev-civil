@@ -416,6 +416,12 @@ def main():
     parser.add_argument("--tau-us", type=float, default=40000.0, help="Hằng số suy giảm LIF (us)")
     parser.add_argument("--v-th", type=float, default=1.2, help="Ngưỡng phát xung LIF")
     parser.add_argument("--save-dir", type=str, default="checkpoints", help="Thư mục lưu trọng số")
+    parser.add_argument(
+        "--resume",
+        type=str,
+        default=None,
+        help="Đường dẫn checkpoint để tiếp tục huấn luyện, ví dụ checkpoints/best_model.pt",
+    )
     parser.add_argument("--sanity-check", action="store_true", help="Chạy thử nhanh 5 batch để kiểm tra pipeline")
     args = parser.parse_args()
 
@@ -448,8 +454,40 @@ def main():
 
     best_map50 = -1.0
     history = []
+    start_epoch = 1
 
-    for epoch in range(1, epochs + 1):
+    if args.resume and os.path.isfile(args.resume):
+        print(f"Đang resume từ checkpoint: {args.resume}")
+        resume_ckpt = torch.load(args.resume, map_location=device)
+        model.load_state_dict(resume_ckpt["model_state_dict"])
+
+        resumed_epoch = int(resume_ckpt.get("epoch", 0))
+        start_epoch = resumed_epoch + 1
+        best_map50 = float(resume_ckpt.get("val_metrics", {}).get("mAP50", -1.0))
+
+        if "optimizer_state_dict" in resume_ckpt:
+            optimizer.load_state_dict(resume_ckpt["optimizer_state_dict"])
+        if "scheduler_state_dict" in resume_ckpt:
+            scheduler.load_state_dict(resume_ckpt["scheduler_state_dict"])
+            scheduler.T_max = epochs
+        if "scaler_state_dict" in resume_ckpt:
+            scaler.load_state_dict(resume_ckpt["scaler_state_dict"])
+
+        history_path = os.path.join(args.save_dir, "training_history.json")
+        if os.path.exists(history_path):
+            with open(history_path, "r", encoding="utf-8") as f:
+                history = json.load(f)
+            best_map50 = max(
+                (record["val"]["mAP50"] for record in history if "val" in record),
+                default=best_map50,
+            )
+
+        if start_epoch > epochs:
+            print(f"Checkpoint đã ở epoch {resumed_epoch}; không còn epoch nào để huấn luyện.")
+    elif args.resume:
+        print(f"Không tìm thấy checkpoint '{args.resume}', bắt đầu huấn luyện từ đầu.")
+
+    for epoch in range(start_epoch, epochs + 1):
         print(f"\n{'='*76}\nEPOCH {epoch}/{epochs} (LR: {optimizer.param_groups[0]['lr']:.6f})\n{'='*76}")
         train_metrics = train_one_epoch(
             model=model,
@@ -483,16 +521,19 @@ def main():
         epoch_record = {"epoch": epoch, "train": train_metrics, "val": val_metrics}
         history.append(epoch_record)
 
-        torch.save(
-            {"epoch": epoch, "model_state_dict": model.state_dict(), "val_metrics": val_metrics, "args": vars(args)},
-            os.path.join(args.save_dir, "last_model.pt"),
-        )
+        checkpoint = {
+            "epoch": epoch,
+            "model_state_dict": model.state_dict(),
+            "optimizer_state_dict": optimizer.state_dict(),
+            "scheduler_state_dict": scheduler.state_dict(),
+            "scaler_state_dict": scaler.state_dict(),
+            "val_metrics": val_metrics,
+            "args": vars(args),
+        }
+        torch.save(checkpoint, os.path.join(args.save_dir, "last_model.pt"))
         if val_metrics["mAP50"] >= best_map50:
             best_map50 = val_metrics["mAP50"]
-            torch.save(
-                {"epoch": epoch, "model_state_dict": model.state_dict(), "val_metrics": val_metrics, "args": vars(args)},
-                os.path.join(args.save_dir, "best_model.pt"),
-            )
+            torch.save(checkpoint, os.path.join(args.save_dir, "best_model.pt"))
             print(f"    *** Đã cập nhật Best Model (mAP@0.5 = {best_map50:.2f}%) ***")
 
         with open(os.path.join(args.save_dir, "training_history.json"), "w", encoding="utf-8") as f:
