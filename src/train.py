@@ -441,6 +441,17 @@ def main():
     parser.add_argument("--weight-decay", type=float, default=1e-2, help="Hệ số điều chuẩn Weight Decay")
     parser.add_argument("--num-workers", type=int, default=2, help="Số luồng đọc HDF5 song song")
     parser.add_argument(
+        "--cache-dir",
+        type=str,
+        default=".cache/spikes",
+        help="Thư mục lưu tensor spike đã mã hóa; dùng '' để tắt cache",
+    )
+    parser.add_argument(
+        "--preprocess-only",
+        action="store_true",
+        help="Chỉ mã hóa và lưu cache, không huấn luyện",
+    )
+    parser.add_argument(
         "--params-json",
         type=str,
         default="params.json",
@@ -478,13 +489,30 @@ def main():
     device = get_device()
     print(f"Khởi chạy huấn luyện QKFormerDetector trên thiết bị: {device}")
 
+    cache_dir = args.cache_dir or None
     train_loader, val_loader, test_loader = build_dataloaders(
         split_json=args.split_json,
         batch_size=args.batch_size,
         num_workers=args.num_workers,
         tau_us=tau_us,
         v_th=v_th,
+        cache_dir=cache_dir,
     )
+    if cache_dir:
+        print(f"Đang tiền xử lý và lưu cache tensor spike tại: {os.path.abspath(cache_dir)}")
+        for split_name, loader in (
+            ("train", train_loader),
+            ("val", val_loader),
+            ("test", test_loader),
+        ):
+            stats = loader.dataset.preprocess_cache()
+            print(
+                f"  {split_name}: đã có {stats['cached']} cache, "
+                f"đã mã hóa {stats['encoded']} clip"
+            )
+        if args.preprocess_only:
+            print("Tiền xử lý hoàn tất; không bắt đầu huấn luyện.")
+            return
     print(
         f"Dữ liệu đã sẵn sàng -> Train: {len(train_loader.dataset)} clips | "
         f"Val: {len(val_loader.dataset)} clips | Test: {len(test_loader.dataset)} clips"

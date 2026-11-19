@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import numpy as np
 import torch
@@ -32,6 +33,7 @@ class EvCivilSpikingDataset(Dataset):
         clip_stride_sec: float | None = None,
         label_tolerance_us: float = 60000.0,
         augment: bool | None = None,
+        cache_dir: str | None = None,
     ):
         if split not in {"train", "val", "test"}:
             raise ValueError(f"split phải là 'train', 'val' hoặc 'test', nhận được: '{split}'")
@@ -44,6 +46,9 @@ class EvCivilSpikingDataset(Dataset):
         self.W = W
         self.tau_us = tau_us
         self.v_th = v_th
+        self.cache_dir = os.path.abspath(cache_dir) if cache_dir else None
+        if self.cache_dir:
+            os.makedirs(self.cache_dir, exist_ok=True)
         self.dt_us = 1_000_000.0 / N  # 40,000 us (25 Hz)
         self.label_tolerance_us = label_tolerance_us
 
@@ -101,22 +106,66 @@ class EvCivilSpikingDataset(Dataset):
     def __len__(self) -> int:
         return len(self.samples)
 
+    def _cache_path(self, item: dict) -> str | None:
+        if not self.cache_dir:
+            return None
+        key = (
+            f"{os.path.abspath(item['h5_path'])}|{item['t0']:.6f}|"
+            f"{self.N}|{self.H}|{self.W}|{self.tau_us:.6f}|{self.v_th:.6f}"
+        )
+        digest = hashlib.sha1(key.encode("utf-8")).hexdigest()
+        return os.path.join(self.cache_dir, f"{digest}.npy")
+
+    def preprocess_cache(self) -> dict[str, int]:
+        cached = 0
+        encoded = 0
+        for item in self.samples:
+            cache_path = self._cache_path(item)
+            if cache_path is None:
+                continue
+            if os.path.isfile(cache_path):
+                cached += 1
+                continue
+
+            x, y, t, p = load_events_from_h5(item["h5_path"])
+            spikes_np = encode_events_2ch_lif(
+                x, y, t, p,
+                N=self.N,
+                H=self.H,
+                W=self.W,
+                tau_us=self.tau_us,
+                v_th=self.v_th,
+                t_start_us=item["t0"],
+            )
+            tmp_path = f"{cache_path}.{os.getpid()}.tmp"
+            np.save(tmp_path, spikes_np.astype(np.uint8, copy=False))
+            os.replace(tmp_path + ".npy", cache_path)
+            encoded += 1
+        return {"cached": cached, "encoded": encoded}
+
     def __getitem__(self, idx: int) -> tuple[torch.Tensor, list[dict[str, torch.Tensor]]]:
         item = self.samples[idx]
         t0 = item["t0"]
         labels = item["labels"]
 
-        # 1. Đọc sự kiện và mã hóa thành Tensor xung thưa (25, 2, 260, 346)
-        x, y, t, p = load_events_from_h5(item["h5_path"])
-        spikes_np = encode_events_2ch_lif(
-            x, y, t, p,
-            N=self.N,
-            H=self.H,
-            W=self.W,
-            tau_us=self.tau_us,
-            v_th=self.v_th,
-            t_start_us=t0,
-        )
+        cache_path = self._cache_path(item)
+        if cache_path and os.path.isfile(cache_path):
+            spikes_np = np.load(cache_path, mmap_mode="r")
+        else:
+            x, y, t, p = load_events_from_h5(item["h5_path"])
+            spikes_np = encode_events_2ch_lif(
+                x, y, t, p,
+                N=self.N,
+                H=self.H,
+                W=self.W,
+                tau_us=self.tau_us,
+                v_th=self.v_th,
+                t_start_us=t0,
+            )
+            if cache_path:
+                tmp_path = f"{cache_path}.{os.getpid()}.tmp"
+                np.save(tmp_path, spikes_np.astype(np.uint8, copy=False))
+                os.replace(tmp_path + ".npy", cache_path)
         spikes_tensor = torch.from_numpy(spikes_np).float()
 
         # Lật ngang ngẫu nhiên (không làm thay đổi cực tính ON/OFF)
@@ -175,13 +224,20 @@ def build_dataloaders(
     num_workers: int = 2,
     tau_us: float = 40000.0,
     v_th: float = 1.2,
+    cache_dir: str | None = None,
 ) -> tuple[DataLoader, DataLoader, DataLoader]:
     """Khởi tạo đồng bộ 3 DataLoader (train, val, test) từ dataset_splits.json."""
     use_pin_memory = torch.cuda.is_available()
 
-    train_ds = EvCivilSpikingDataset(split_json=split_json, split="train", tau_us=tau_us, v_th=v_th)
-    val_ds = EvCivilSpikingDataset(split_json=split_json, split="val", tau_us=tau_us, v_th=v_th)
-    test_ds = EvCivilSpikingDataset(split_json=split_json, split="test", tau_us=tau_us, v_th=v_th)
+    train_ds = EvCivilSpikingDataset(
+        split_json=split_json, split="train", tau_us=tau_us, v_th=v_th, cache_dir=cache_dir
+    )
+    val_ds = EvCivilSpikingDataset(
+        split_json=split_json, split="val", tau_us=tau_us, v_th=v_th, cache_dir=cache_dir
+    )
+    test_ds = EvCivilSpikingDataset(
+        split_json=split_json, split="test", tau_us=tau_us, v_th=v_th, cache_dir=cache_dir
+    )
 
     train_loader = DataLoader(
         train_ds,
